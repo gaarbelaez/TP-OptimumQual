@@ -1,28 +1,43 @@
 #--------------
 # Exo.1
-# données silice
+#
 
 
-# charger les libraries necessaires, dans ce cas nous utilisons qcc
-library(qcc)
-library(tidyverse)
-library(ggplot2)
-library(readr)
+# charger les libraries necessaires,
+library(qcc) # pour cartes de control
+library(tidyverse) #pour données
+library(ggplot2) #pour les grafiques
 
 
-# Import and inspect the dataset
-dataset <- read_csv("Exos/exo_silice.csv")
+# Importer et verifier le dataset
+data(pistonrings) #données example de pistons
+dataset <- pistonrings
 
-# Creer un diagrmme X-bar et R
-q <- qcc(dataset, type = "xbar")
+# Calculer des statistiques descriptives V1
+mean_value <- mean(dataset$diameter)
+sd_value <- sd(dataset$diameter)
+min_value <- min(dataset$diameter)
+max_value <- max(dataset$diameter)
 
-#voir le résumé de l'object control chart
-summary(q)
+## Calculer des statistiques descriptives V2 tydiverse
+data_summary <- dataset %>% group_by(trial) %>%
+  summarise(
+      mean_value = mean(diameter),
+      sd_value = sd(diameter),
+      min_value = min(diameter),
+      max_value = max(diameter)
+  )
 
-qcc(dataset, type = "R") #création du digramme R
+
+# Creer un histogram
+dataset %>% ggplot(aes(diameter)) +
+  geom_histogram() +
+  labs(title = "Histogram des diametres", x = "Diametre", y = "Frequence")
 
 
-# calcules de capabilité
-pc = process.capability(q, spec.limits = c(114,175))
+# Creer un boxplot - boite à moustaches
+ggplot(dataset, aes(x = trial, y =diameter)) +
+  geom_boxplot() +
+  labs(title = "Box Plot of Variable", x = "", y = "Variable")
 
 
