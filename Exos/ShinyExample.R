@@ -6,16 +6,14 @@
 library(shiny)
 library(ggplot2)
 library(qcc)
+library(readr)
 
 
-data(pistonrings) #données example de pistons
-attach(pistonrings) # permet de dire à qcc que nous nous referons aux données lors de l'appel de la fonction
-diameter <- qcc.groups(diameter, sample) #on va creer les données diametre avec les diametre et les sous groups seront les "sample"
-data<-diameter
+
 
 # Define UI
 ui <- fluidPage(
-  titlePanel("MSP/SPC Dashboard"),
+  titlePanel("MSP/SPC tableau de bord"),
 
   # Sidebar with a slider input for number of bins
   sidebarLayout(
