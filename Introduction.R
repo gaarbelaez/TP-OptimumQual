@@ -46,7 +46,7 @@ pc = process.capability(q1, spec.limits = c(73.95,74.05))
 
 pc = process.capability(q1, spec.limits = c(73.95,74.05), target = 74.02) # changer la cible
 
-pc = process.capability(q, spec.limits = c(73.99,74.01)) #reduire les limites pour tester, voir l'effet sur la capabilité
+pc = process.capability(q1, spec.limits = c(73.99,74.01)) #reduire les limites pour tester, voir l'effet sur la capabilité
 
 # les données de la distribution sont calculés par défaut mais si connus il est possiblé de les spécifier
 
