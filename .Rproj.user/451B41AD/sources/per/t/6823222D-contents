@@ -1,7 +1,3 @@
-#--------------
-# Exo.1
-#
-
 
 # charger les libraries necessaires,
 library(qcc) # pour cartes de control

@@ -8,6 +8,7 @@ library(shiny)
 library(ggplot2)
 library(qcc)
 library(readr)
+library(tidyverse) #pour données
 
 
 # Import and inspect the dataset

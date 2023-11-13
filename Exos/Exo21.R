@@ -8,21 +8,17 @@ library(qcc)
 library(tidyverse)
 library(ggplot2)
 library(readr)
+library(readxl)
 
 
 # Import and inspect the dataset
-dataset <- read_csv("Exos/exo_silice.csv")
+dataset <- read_csv("données/exo_silice.csv")
+dataset2 <- read_excel("données/CMdynamometre.xlsx")
 
 # Creer un diagrmme X-bar et R
-q <- qcc(dataset, type = "xbar")
-
-#voir le résumé de l'object control chart
-summary(q)
-
-qcc(dataset, type = "R") #création du digramme R
 
 
-# calcules de capabilité
-pc = process.capability(q, spec.limits = c(114,175))
+
+# calcule de capabilité C114-1175
 
 

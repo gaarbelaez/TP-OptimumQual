@@ -6,6 +6,25 @@ library(ggplot2)
 data(boiler) #données example de pistons
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #save as images
 
 jpeg(file="q1.jpeg")

@@ -40,4 +40,11 @@ ggplot(dataset, aes(x = trial, y =diameter)) +
   geom_boxplot() +
   labs(title = "Box Plot of Variable", x = "", y = "Variable")
 
+# Creer la carte de controle de Xbar
+
+
+# Creer la carte de controle de R
+
+# analyser la capabilité
+
 

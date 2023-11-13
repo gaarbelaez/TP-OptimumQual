@@ -1,26 +1,26 @@
 {
-    "id": "9B09FF19",
+    "id": "6823222D",
     "path": "~/Desktop/Cours capability/TP1-OptQual/Introduction/Intro1.R",
     "project_path": "Introduction/Intro1.R",
     "type": "r_source",
-    "hash": "3301944396",
+    "hash": "647118208",
     "contents": "",
-    "dirty": false,
-    "created": 1696435378657.0,
+    "dirty": true,
+    "created": 1699902394431.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "1,0",
-        "scrollLine": "0"
+        "cursorPosition": "26,0",
+        "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1696401782,
+    "lastKnownWriteTime": 1698042183,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1696401782,
+    "last_content_update": 1699902423996,
     "read_only": false,
     "read_only_alternatives": []
 }

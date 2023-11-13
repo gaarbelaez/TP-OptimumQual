@@ -2,7 +2,44 @@
 library(qcc)
 library(tidyverse)
 library(ggplot2)
-library(readr)
+
 
 data(orangejuice)
-(q = with(orangejuice, qcc(D[trial], sizes = size[trial], type = "p")))
+ # tracer la carte p
+
+
+
+# données carte electroniques
+data(circuit)
+
+# tracer la carte np
+
+#Données PC nombre de non-conformités dans des lots de 5 PC
+data(pcmanufact)
+
+# tracer la carte c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# newdata = D[!trial], newsizes = size[!trial]))

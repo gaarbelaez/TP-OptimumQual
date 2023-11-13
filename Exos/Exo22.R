@@ -9,22 +9,24 @@ library(tidyverse)
 library(ggplot2)
 library(readr)
 
+viscosity <- c(33.75, 33.05, 34, 33.81, 33.46, 34.02, 33.68, 33.27, 33.49, 33.20,
+       33.62, 33.00, 33.54, 33.12, 33.84)
 
-# Import and inspect the dataset
+
+# créer diagramme Xbar pour viscosity
+
+
+
+
+# Import and inspect the dataset Manufacturing
 dataset <- read_csv("données/manufacturing_data.csv")
 
-dataset_l <- dataset %>% select(Length_cm.1:Length_cm.5)
 
-# Creer un diagrmme X-bar et R
-q1 <- qcc(dataset_l, type = "xbar")
-
-#voir le résumé de l'object control chart
-summary(q)
-
-qcc(dataset, type = "R") #création du digramme R
+# Creer un diagrmme X-bar et R pour Width
 
 
-# calcules de capabilité
-pc = process.capability(q1, spec.limits = c(46,56))
+#création du digramme R
 
+
+# calcule de capabilité
 
